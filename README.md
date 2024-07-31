@@ -6,15 +6,20 @@ Playground for learning about PostgreSQL
 - Automate so much as possible
 
 ## Things to learn
-- How to generate a dump
-- How to import a dump
-- How to run an SQL sentence with `docker run`
-- How to start a DB with data loaded (e.g. for testing)
-- How to automate migrations
-- How to anonymize a dump
-- How to automatically fill fields like `created_at`, `updated_at`
-- Logs
-- SQL joins (refresh)
+- [ ] How to generate a dump
+  - https://github.com/thingsboard/thingsboard/issues/8116
+  - `pg_dump dangerousdb > db.sql`
+  - `pg_dump -U postgres -F c dangerousdb > dangerousdb.tar`
+  - `pg_dump -U postgres -F d dangerousdb > db1_backup`
+  - `pg_dump -U postgres dangerousdb | gzip > dangerousdb.gz`
+- [x] How to run an SQL sentence with `docker run`
+- [ ] How to start a DB with data loaded (e.g. for testing)
+- [ ] How to automate migrations
+- [ ] How to anonymize a dump
+- [x] How to restore a DB from an archive ([pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html))
+- [ ] How to automatically fill fields like `created_at`, `updated_at`
+- [ ] Logs
+- [ ] SQL joins (refresh)
   - https://www.w3schools.com/sql/sql_join.asp
 
 ## Commands
@@ -28,6 +33,8 @@ Playground for learning about PostgreSQL
   - `docker exec -it some-postgres psql -U postgres`
   - `docker exec -it some-postgres psql -U postgres <databaseName>`
   - `docker exec some-postgres psql -U postgres -c "<SQL_SENTENCE>"`
+- Generate a dump
+  - `docker exec -it some-postgres pg_dump some-postgres > db.sql`
 
 ## PSQL
 - https://www.atlassian.com/data/admin/how-to-list-databases-and-tables-in-postgresql-using-psql
@@ -75,6 +82,7 @@ schemaname != 'information_schema';
 - https://www.postgresql.org/docs/online-resources/
 
 ### Pending readings
+- https://simplebackups.com/blog/postgresql-pgdump-and-pgrestore-guide-examples/
 - https://architecturenotes.co/p/things-you-should-know-about-databases
 - https://x-team.com/blog/automatic-timestamps-with-postgresql
 - https://salsita.github.io/node-pg-migrate/introduction
