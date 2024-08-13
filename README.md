@@ -65,6 +65,11 @@ schemaname != 'information_schema';
 - **Tools used**
   - DBeaver
 - https://www.youtube.com/@CodelyTV/search?query=postgresql
+- https://pglite.dev/
+  - Run a full Postgres database locally in WASM with reactivity and live sync.
+- https://postgres.new/
+  - https://github.com/supabase-community/postgres-new
+  - In-browser Postgres sandbox with AI assistance.
 
 ### Sample databases
 - https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/
