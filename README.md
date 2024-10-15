@@ -13,7 +13,7 @@ Playground for learning about PostgreSQL
   - `pg_dump -U postgres -F d dangerousdb > db1_backup`
   - `pg_dump -U postgres dangerousdb | gzip > dangerousdb.gz`
 - [x] How to run an SQL sentence with `docker run`
-- [ ] How to start a DB with data loaded (e.g. for testing)
+- [x] How to start a DB with data loaded (e.g. for testing)
 - [ ] How to automate migrations
 - [ ] How to anonymize a dump
 - [x] How to restore a DB from an archive ([pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html))
@@ -64,12 +64,13 @@ schemaname != 'information_schema';
   - https://hub.docker.com/_/postgres
 - **Tools used**
   - DBeaver
-- https://www.youtube.com/@CodelyTV/search?query=postgresql
-- https://pglite.dev/
-  - Run a full Postgres database locally in WASM with reactivity and live sync.
-- https://postgres.new/
-  - https://github.com/supabase-community/postgres-new
-  - In-browser Postgres sandbox with AI assistance.
+  - https://www.youtube.com/@CodelyTV/search?query=postgresql
+  - https://pglite.dev/
+    - Run a full Postgres database locally in WASM with reactivity and live sync.
+  - https://postgres.new/
+    - https://github.com/supabase-community/postgres-new
+    - In-browser Postgres sandbox with AI assistance.
+  - https://levelup.gitconnected.com/creating-and-filling-a-postgres-db-with-docker-compose-e1607f6f882f
 
 ### Sample databases
 - https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/

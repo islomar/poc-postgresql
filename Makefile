@@ -30,7 +30,7 @@ stop-populated: ## Stop the populated database
 stop-and-clean-populated: ## Stop the populated database and clean the volumes
 	docker compose down --volumes
 
-.PHONY: psql
+.PHONY: psql-my-postgres
 psql-my-postgres: ## Start PSQL
 	docker exec -it my-postgres psql -U postgres
 
